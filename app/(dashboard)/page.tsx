@@ -1,5 +1,4 @@
 "use client";
-import { use } from "react";
 
 import { useOrganization } from "@clerk/nextjs";
 import { EmptyOrg } from "./_components/empty-org";
@@ -12,8 +11,8 @@ interface DashboardPageProps {
         favorites?: string;
     }>;
 }
-const DashboardPage = (props: DashboardPageProps) => {
-    const searchParams = use(props.searchParams);
+const DashboardPage = async (props: DashboardPageProps) => {
+    const searchParams = await props.searchParams;
     console.log(searchParams);
     const { organization } = useOrganization();
     return ( 
