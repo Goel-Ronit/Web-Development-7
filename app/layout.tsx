@@ -4,8 +4,6 @@ import "./globals.css";
 import { ConvexClientProvider } from "@/providers/convex-client-provider";
 import { ModalProvider } from "@/providers/modal-provider";
 import { Toaster } from "@/components/ui/sonner";
-import { Suspense } from "react";
-import { Loading } from "@/components/auth/loading";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
