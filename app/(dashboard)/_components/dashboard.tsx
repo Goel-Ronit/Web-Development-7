@@ -1,7 +1,6 @@
 "use client";
 
 import { useOrganization } from "@clerk/nextjs";
-import { use } from "react";
 import { EmptyOrg } from "./empty-org";
 import { BoardList } from "./board-list";
 
